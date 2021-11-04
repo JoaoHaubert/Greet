@@ -73,18 +73,29 @@ footer {
 }
 
 
+
+
+
+
+
+
+
 /*-----SCRIPT.JS-----*/
 
 function refresh(){
-    let msg = window.document.getElementById('msg')
-    let img = window.document.getElementById('image')
-    let greet = window.document.getElementById('greet')
-    let day = new Date()
-    let time = day.getHours()
     
-
-   
-    msg.innerHTML = `It is ${time} hours.`
+		let msg = window.document.getElementById('msg')
+    
+		let img = window.document.getElementById('image')
+    
+		let greet = window.document.getElementById('greet')
+    
+		let day = new Date()
+    
+		let time = day.getHours()
+    
+		
+		msg.innerHTML = `It is ${time} hours.`
     if (time >=0 && time <12){
         //GOOD MORNING!!
         img.src ="morning.png"
